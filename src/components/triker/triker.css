@@ -1,0 +1,24 @@
+.ticker_container {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	align-items: center;
+	top: 50%;
+	align-items: center;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+	white-space: nowrap;
+	text-transform: uppercase;
+	color: var(--light-color);
+	animation: 25s moveText linear infinite;
+}
+
+@keyframes moveText {
+	from {
+		transform: translate(0, -50%);
+	}
+	to {
+		transform: translate(-50%, -50%);
+	}
+}

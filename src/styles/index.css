@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import './fonts.css'; */
+
+:root {
+	--primary-color: #ff8048;
+	--secondary-color: #535252;
+	--gray-color: #c1c1c1;
+	--light-color: #f6f6f6;
+	--dark-color: #26221f;
+}
+@layer base {
+	html {
+		/* font-family: 'Rubik', sans-serif; */
+		/* font-family: 'Roboto', sans-serif; */
+	}
+}
+body {
+	background: var(--light-color);
+	/* min-width: 100vw;
+  max-width: 100vw; */
+	/* overflow-x: hidden; */
+	/* width: 100vw; */
+	/* height: auto;
+  min-height: 100vh; */
+	/* display: flex;
+  justify-content: center; */
+	border-color: var(--secondary-color);
+}
+
+.container {
+	@apply max-w-[1200px] px-3;
+}
+.avatar-wrapper {
+	@apply relative flex items-center z-0;
+}
+.avatar-wrapper > img {
+	@apply absolute;
+}
+.avatar {
+	@apply w-12 h-12 object-cover rounded-full border-2 mr-2;
+}

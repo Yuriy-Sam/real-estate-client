@@ -1,0 +1,59 @@
+.card:hover .card_control {
+	@apply transition-all visible opacity-70;
+}
+.card_content {
+	@apply absolute text-light-color   w-full left-0 bottom-0 p-4;
+}
+.card_content::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.6) 10%,
+		rgba(0, 0, 0, 0.8) 50%,
+		rgba(0, 0, 0, 0.9) 100%
+	);
+}
+.card_benefits {
+	@apply text-sm font-medium flex items-center gap-1 text-dark-color py-1 px-2 bg-light-color w-auto rounded-md;
+}
+.card_control {
+	@apply invisible   w-auto h-full bg-black p-10 relative opacity-0;
+}
+.arrow {
+	width: 30px;
+	height: 30px;
+	/* padding: 20px; */
+	position: relative;
+}
+.arrow::after,
+.arrow::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	display: block;
+	width: 5px;
+	height: 30px;
+	border-radius: 10px;
+	background: var(--light-color);
+	transform: translate(-50%, calc(-50% - 10px)) rotate(45deg);
+}
+.arrow::before {
+	transform: translate(-50%, calc(-50% + 10px)) rotate(-45deg);
+}
+/* .arrow_left {
+	transform: rotate(-45deg);
+}
+.arrow_right {
+	transform: rotate(45deg);
+} */
+.card_controlers {
+	@apply absolute top-0 left-0 flex justify-between items-center h-full w-full;
+}
