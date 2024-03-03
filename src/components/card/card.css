@@ -24,12 +24,11 @@
 	@apply text-sm font-medium flex items-center gap-1 text-dark-color py-1 px-2 bg-light-color w-auto rounded-md;
 }
 .card_control {
-	@apply invisible   w-auto h-full bg-black p-10 relative opacity-0;
+	@apply invisible   w-auto h-full bg-black p-5 relative opacity-0;
 }
-.arrow {
+/* .arrow {
 	width: 30px;
 	height: 30px;
-	/* padding: 20px; */
 	position: relative;
 }
 .arrow::after,
@@ -47,7 +46,7 @@
 }
 .arrow::before {
 	transform: translate(-50%, calc(-50% + 10px)) rotate(-45deg);
-}
+} */
 /* .arrow_left {
 	transform: rotate(-45deg);
 }

@@ -30,7 +30,7 @@ const testCart: CardType = {
 
 const HomeRecept = () => {
 	return (
-		<section className=" bg-dark-color h-full w-full  p-16">
+		<section className=" bg-dark-color h-full w-full  p-10 py-16">
 			<h2 className=" text-7xl font-bold text-light-color mb-16">
 				Best Property
 			</h2>

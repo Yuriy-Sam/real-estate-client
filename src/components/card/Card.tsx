@@ -54,7 +54,7 @@ const Card = ({ data, ...props }: CardProps) => {
 	};
 	return (
 		<div
-			className="card block relative max-w-[420px] w-full min-w-[300px] h-[500px] z-[1] rounded-lg overflow-hidden"
+			className="card block relative max-w-[450px] w-full min-w-[300px] h-[500px] z-[1] rounded-lg overflow-hidden"
 			{...props}
 		>
 			<div className="card_controlers">
@@ -67,9 +67,9 @@ const Card = ({ data, ...props }: CardProps) => {
 				<Link to={`/builder/${id}`} className=" w-full h-full" />
 				<button
 					onClick={() => handleChangeImages(1)}
-					className="card_control transform rotate-180"
+					className="card_control "
 				>
-					<span className="arrow"></span>
+					<span className="arrow _right"></span>
 				</button>
 			</div>
 
@@ -80,11 +80,10 @@ const Card = ({ data, ...props }: CardProps) => {
 			/>
 			{/* <div className="card_wrapper"> */}
 			<div className="card_content">
-				<div className=" flex items-center gap-1 text-sm text-gray-color  ">
+				<div className=" flex items-center gap-1 text-sm text-secondary-color-200   ">
 					{/* <SvgIcon
 						iconName="marker"
 						size={15}
-						color="var(--gray-color)"
 					/> */}
 					<p>{address}</p>
 				</div>
